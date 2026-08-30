@@ -46,6 +46,8 @@ Copy `data/cars/_template`, rename the folder so it matches `id`, set `example: 
 
 ## Local
 
+Needs **Node 22**. CI and the Markdown linter use that version.
+
 ```bash
 npm install
 npm run dev
