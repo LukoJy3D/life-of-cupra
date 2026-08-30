@@ -44,4 +44,4 @@ Rules:
 
 ## 4. Open a pull request
 
-`npm run build` should succeed. Do not add `_template` clones with `example: true` unless you are documenting the format.
+`npm run lint` and `npm run build` should succeed. Do not add `_template` clones with `example: true` unless you are documenting the format.

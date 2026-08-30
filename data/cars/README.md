@@ -2,7 +2,7 @@
 
 Each contributed car is a folder. The home page averages every folder that is not `_template`.
 
-```
+```text
 data/cars/<owner>-<model>-<year>/
   car.yaml      # who / which car / lease contract
   months.yaml   # one row per calendar month
