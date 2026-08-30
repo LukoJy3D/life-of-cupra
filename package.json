@@ -6,7 +6,11 @@
     "dev": "vite",
     "poll-market": "node scripts/poll-market.mjs",
     "build": "tsc --noEmit && vite build && node scripts/write-summary.mjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "npm run lint:md && npm run lint:ts && npm run lint:yaml",
+    "lint:md": "markdownlint \"**/*.md\"",
+    "lint:ts": "tsc --noEmit",
+    "lint:yaml": "node scripts/lint-yaml.mjs"
   },
   "dependencies": {
     "chart.js": "^4.5.0",
@@ -14,6 +18,7 @@
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
+    "markdownlint-cli": "^0.45.0",
     "typescript": "^5.9.2",
     "vite": "^6.3.5"
   }
