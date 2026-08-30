@@ -1,0 +1,132 @@
+# Typical MY24 Formentor VZ 2.0 ~310 hp (pre-facelift) average asking path.
+# Includes the 2025 facelift effect on pre-facelift prices.
+# Scaled in the model to each car's list price (this series' near-new baseline is 41500).
+# Poll must not overwrite source: backfill. New months are written as autoscout24.
+baseline_month: "2024-08"
+baseline_eur: 41500
+months:
+  - month: "2024-08"
+    median_eur: 41500
+    n: 0
+    source: backfill
+    note: Pre-facelift baseline before widespread facelift deliveries
+  - month: "2024-09"
+    median_eur: 40200
+    n: 0
+    source: backfill
+    note: Facelift order books open; initial discounting begins
+  - month: "2024-10"
+    median_eur: 38800
+    n: 0
+    source: backfill
+    note: Dealers clear out pre-facelift stock
+  - month: "2024-11"
+    median_eur: 37600
+    n: 0
+    source: backfill
+    note: Early owner trade-in wave for new 333 hp orders
+  - month: "2024-12"
+    median_eur: 36600
+    n: 0
+    source: backfill
+    note: Year-end clearance on remaining delivery-mileage 310 hp inventory
+  - month: "2025-01"
+    median_eur: 35800
+    n: 0
+    source: backfill
+    note: Model age roll-over milestone
+  - month: "2025-02"
+    median_eur: 35200
+    n: 0
+    source: backfill
+    note: Winter baseline stabilization
+  - month: "2025-03"
+    median_eur: 34200
+    n: 0
+    source: backfill
+    note: Facelifted 333 hp models hit roads; pre-facelift drops below €35k
+  - month: "2025-04"
+    median_eur: 33600
+    n: 0
+    source: backfill
+    note: Post-launch market adjustment
+  - month: "2025-05"
+    median_eur: 33100
+    n: 0
+    source: backfill
+    note: Normal secondary market trading resume
+  - month: "2025-06"
+    median_eur: 32600
+    n: 0
+    source: backfill
+    note: Pre-summer pre-facelift trade-in influx
+  - month: "2025-07"
+    median_eur: 32200
+    n: 0
+    source: backfill
+    note: Steady used-market depreciation
+  - month: "2025-08"
+    median_eur: 31800
+    n: 0
+    source: backfill
+    note: 1 year post-facelift announcement
+  - month: "2025-09"
+    median_eur: 31400
+    n: 0
+    source: backfill
+    note: Pre-facelift price curve stabilizes
+  - month: "2025-10"
+    median_eur: 31000
+    n: 0
+    source: backfill
+    note: Passing the €31k threshold
+  - month: "2025-11"
+    median_eur: 30600
+    n: 0
+    source: backfill
+    note: Standard winter re-pricing
+  - month: "2025-12"
+    median_eur: 30200
+    n: 0
+    source: backfill
+    note: Year-end used dealer inventory pricing
+  - month: "2026-01"
+    median_eur: 29700
+    n: 0
+    source: backfill
+    note: Pre-facelift models drop below €30,000
+  - month: "2026-02"
+    median_eur: 29300
+    n: 0
+    source: backfill
+    note: Post-holiday low volume trade
+  - month: "2026-03"
+    median_eur: 28900
+    n: 0
+    source: backfill
+    note: Spring buying season adjustment
+  - month: "2026-04"
+    median_eur: 28500
+    n: 0
+    source: backfill
+    note: Steady, mature used vehicle pricing
+  - month: "2026-05"
+    median_eur: 28200
+    n: 0
+    source: backfill
+    note: Tighter depreciation slope
+  - month: "2026-06"
+    median_eur: 27900
+    n: 0
+    source: backfill
+    note: High-liquidity price floor reached
+  - month: "2026-07"
+    median_eur: 27650
+    n: 0
+    source: backfill
+    note: Minor monthly correction
+  - month: "2026-08"
+    median_eur: 27400
+    n: 0
+    source: backfill
+    note: Current average (~35,000 km, clean)

@@ -1,0 +1,27 @@
+# Copy this folder to data/cars/<githubuser>-<model>-<year>/
+# Rename id to that folder name, then open a PR.
+id: yourname-formentor-2024
+owner: yourname
+name: Cupra Formentor
+trim: VZ 2.0 TSI 4Drive
+engine: 2.0 TSI
+power_ps: 310
+first_registration: "2024-09-01"
+wltp_l_per_100km: 8.7
+list_price_eur: 40000
+paid_price_eur: 40000
+color: ""
+example: true
+lease:
+  start: "2024-09-01"
+  term_months: 48
+  monthly_eur: 400
+  monthly_note: ""
+  initial_payment_eur: 0
+  km_per_year: 15000
+  excess_eur_per_km: 0
+  included:
+    service: false
+    tires: false
+    insurance: false
+  buyout_eur: null

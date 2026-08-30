@@ -1,0 +1,10 @@
+months:
+  - month: 2024-09
+    lease_eur: 400
+    insurance_eur: 0
+    fuel_eur: 0
+    tires_eur: 0
+    maintenance_eur: 0
+    other_eur: 0
+    remaining_eur: 32000
+    note: first month

@@ -1,0 +1,27 @@
+# Dated published comparison points. Update when you find a better source.
+items:
+  - id: carwow_tco
+    source: Carwow Kostencheck
+    date: "2026-08-18"
+    monthly_eur: 713
+    eur_per_km: 0.57
+    residual_pct_36m: 61
+    note: >
+      Formentor 1.5 eTSI, list €44,695, 3 years / 45,000 km. Includes tax, fuel,
+      insurance, estimated depreciation. Excludes service, tires, finance.
+    url: https://www.carwow.de/automagazin/auto-besitzen-und-fahren/taeglicher-gebrauch/kostencheck-cupra-formentor-so-teuer-ist-das-sportliche-suv-im-unterhalt
+  - id: autobild_residual
+    source: Auto Bild Restwertprognose
+    date: "2026-01-01"
+    residual_pct_36m: 47.9
+    note: >
+      Formentor residual after 36 months / 20,000 km per year. Fleet-heavy
+      supply; lower than Tavascan / Terramar.
+    url: https://www.autobild.de/artikel/restwertprognose-cupra-kriegt-die-kurve-28591723.html
+  - id: adac_depreciation
+    source: ADAC Autokosten (via Carwow)
+    date: "2026-08-18"
+    monthly_eur: 511
+    note: >
+      Depreciation-only monthly figure on a €47,615 equipped 1.5 eTSI.
+      Not a full TCO.

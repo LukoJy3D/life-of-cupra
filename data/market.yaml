@@ -1,0 +1,29 @@
+# Forecast assumptions stay here. Live asks are written to market-snapshot.json
+# by `npm run poll-market` (CI runs this whenever data changes).
+km_adjustment_eur_per_km: 0.10
+comps: []
+poll:
+  source: autoscout24
+  make: cupra
+  model: formentor
+  year_min: 2024
+  year_max: 2024
+  power_ps_min: 300
+  power_ps_max: 330
+  # AutoScout24's hp filter is unreliable; kW band is what actually returns VZ 310.
+  power_kw_min: 220
+  power_kw_max: 240
+  engine_needles:
+    - "2.0"
+  exclude_needles:
+    - VZ5
+    - "2.5"
+    - "390"
+  limit: 12
+forecast:
+  # VZ 310 depreciates harder than the 1.5 eTSI Carwow example. Band is still a guess.
+  optimistic_pct_at_36m: 55
+  pessimistic_pct_at_36m: 45
+  optimistic_assumed_km_per_year: 15000
+  pessimistic_assumed_km_per_year: 30000
+  tail_annual_pct: 10

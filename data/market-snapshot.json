@@ -1,0 +1,104 @@
+{
+  "polled_at": "2026-08-30T14:49:06.969Z",
+  "source": "autoscout24",
+  "query": "https://www.autoscout24.com/lst/cupra/formentor?atype=C&desc=0&sort=price&ustate=N%2CU&powertype=kw&powerfrom=220&powerto=240&fregfrom=2024&fregto=2024",
+  "error": null,
+  "comps": [
+    {
+      "date": "2026-08-30",
+      "asking_eur": 28280,
+      "year": 2024,
+      "km": 27616,
+      "engine": "2.0 TSI 4Drive VZ AUT+Kamera+ACC+Navi",
+      "url": "https://www.autoscout24.com/offers/cupra-formentor-2-0-tsi-4drive-vz-aut+kamera+acc+navi-gasoline-white-cat_ma51802mo75545-62196ead-1854-4172-a866-cb2dd67fd592"
+    },
+    {
+      "date": "2026-08-30",
+      "asking_eur": 28590,
+      "year": 2024,
+      "km": 55262,
+      "engine": "2.0 TSI DSG 4Drive VZ LED NAVI ACC SIDEASS PARKASS",
+      "url": "https://www.autoscout24.com/offers/cupra-formentor-2-0-tsi-dsg-4drive-vz-led-navi-acc-sideass-parkass-gasoline-black-cat_ma51802mo75545-3faedbfd-5d14-4763-be03-c139f45519d1"
+    },
+    {
+      "date": "2026-08-30",
+      "asking_eur": 28980,
+      "year": 2024,
+      "km": 20982,
+      "engine": "2.0 TSI DSG VZ 4Drive Full-Link/RFK",
+      "url": "https://www.autoscout24.com/offers/cupra-formentor-2-0-tsi-dsg-vz-4drive-full-link-rfk-gasoline-grey-cat_ma51802mo75545-c18dddf8-e00b-427d-ab5a-5e2ac9701405"
+    },
+    {
+      "date": "2026-08-30",
+      "asking_eur": 26990,
+      "year": 2024,
+      "km": 47040,
+      "engine": "VZ 2.0 TSI DSG 4DRIVE+NAVI+FULL LINK",
+      "url": "https://www.autoscout24.com/offers/cupra-formentor-vz-2-0-tsi-dsg-4drive+navi+full-link-gasoline-grey-cat_ma51802mo75545-d241cfe2-bd04-46c6-a317-13099704ff70"
+    },
+    {
+      "date": "2026-08-30",
+      "asking_eur": 27880,
+      "year": 2024,
+      "km": 59400,
+      "engine": "VZ 2.0 TSI LED NAVI KAMERA SHZ",
+      "url": "https://www.autoscout24.com/offers/cupra-formentor-vz-2-0-tsi-led-navi-kamera-shz-gasoline-white-cat_ma51802mo75545-3bd9dba7-194e-4456-ab6e-62159cd54cab"
+    },
+    {
+      "date": "2026-08-30",
+      "asking_eur": 27950,
+      "year": 2024,
+      "km": 43850,
+      "engine": "VZ 2.0 TSI 4Drive DSG7 Navi DCC ACC",
+      "url": "https://www.autoscout24.com/offers/cupra-formentor-vz-2-0-tsi-4drive-dsg7-navi-dcc-acc-gasoline-grey-cat_ma51802mo75545-ea86443e-229b-4ad0-accd-90e4fc989764"
+    },
+    {
+      "date": "2026-08-30",
+      "asking_eur": 27950,
+      "year": 2024,
+      "km": 20500,
+      "engine": "VZ 2.0 TSI 4Drive 19\" LED FULL LINK SITZHEIZUNG",
+      "url": "https://www.autoscout24.com/offers/cupra-formentor-vz-2-0-tsi-4drive-19-led-full-link-sitzheizung-gasoline-white-cat_ma51802mo75545-1aa9b2e0-9dc4-4fd4-95e4-374ff053a2d7"
+    },
+    {
+      "date": "2026-08-30",
+      "asking_eur": 27950,
+      "year": 2024,
+      "km": 31215,
+      "engine": "VZ 2.0 TSI 4Drive 228 kW (310 PS) Sportpaket AD Na",
+      "url": "https://www.autoscout24.com/offers/cupra-formentor-vz-2-0-tsi-4drive-228-kw-310-ps-sportpaket-ad-na-gasoline-grey-cat_ma51802mo75545-ea6116af-bc3d-4421-ac4f-0f7c41d07503"
+    },
+    {
+      "date": "2026-08-30",
+      "asking_eur": 27980,
+      "year": 2024,
+      "km": 69085,
+      "engine": "VZ 2.0 TSI 4Drive DSG Rückfahrkamera S",
+      "url": "https://www.autoscout24.com/offers/cupra-formentor-vz-2-0-tsi-4drive-dsg-rueckfahrkamera-s-gasoline-white-cat_ma51802mo75545-e7e6afd4-aa4f-4686-97b6-84f4cb2970d8"
+    },
+    {
+      "date": "2026-08-30",
+      "asking_eur": 27990,
+      "year": 2024,
+      "km": 56277,
+      "engine": "VZ 2.0 TSI DSG+4DRIVE+LED+ACC+NAVI+AHK",
+      "url": "https://www.autoscout24.com/offers/cupra-formentor-vz-2-0-tsi-dsg+4drive+led+acc+navi+ahk-gasoline-grey-cat_ma51802mo75545-5e2c0491-5671-4cd0-9512-358c61ffd024"
+    },
+    {
+      "date": "2026-08-30",
+      "asking_eur": 27990,
+      "year": 2024,
+      "km": 33910,
+      "engine": "VZ  2.0 TSI 4DRIVE DSG LED+NAVI+ACC",
+      "url": "https://www.autoscout24.com/offers/cupra-formentor-vz-2-0-tsi-4drive-dsg-led+navi+acc-gasoline-grey-cat_ma51802mo75545-99a77391-08ba-4ce2-8f27-ec0f6c620e9b"
+    },
+    {
+      "date": "2026-08-30",
+      "asking_eur": 27990,
+      "year": 2024,
+      "km": 35120,
+      "engine": "VZ 2.0 TSI 4DRIVE DSG LED+NAVI+ACC",
+      "url": "https://www.autoscout24.com/offers/cupra-formentor-vz-2-0-tsi-4drive-dsg-led+navi+acc-gasoline-black-cat_ma51802mo75545-0a9d43c7-ab10-460b-b660-99c39ff64c3a"
+    }
+  ]
+}
