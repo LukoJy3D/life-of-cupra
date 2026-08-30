@@ -23,6 +23,6 @@
     "@types/js-yaml": "^4.0.9",
     "markdownlint-cli": "^0.45.0",
     "typescript": "^5.9.2",
-    "vite": "^6.3.5"
+    "vite": "^8.2.2"
   }
 }
