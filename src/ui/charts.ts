@@ -11,7 +11,7 @@ import {
   Tooltip,
 } from "chart.js";
 import type { TooltipItem } from "chart.js";
-import type { Dataset, Model, StackCategory } from "../types";
+import type { Dataset, Model, MonthEntry, StackCategory } from "../types";
 import { monthKey } from "../model/math";
 import { eur, monthLabel, num } from "./format";
 
@@ -40,6 +40,17 @@ const STACK: { key: StackCategory; label: string; color: string }[] = [
   { key: "maintenance", label: "Maintenance", color: "#9a7b9a" },
   { key: "other", label: "Other", color: "#5c6560" },
 ];
+
+export const TREAD = [
+  { key: "tread_summer_mm", label: "Summer", color: "#d4a017" },
+  { key: "tread_winter_mm", label: "Winter", color: "#6b8cae" },
+] as const;
+
+/** [FL, FR, RL, RR] in mm, or null when the month has no full reading. */
+export function treadOf(row: MonthEntry | undefined, key: (typeof TREAD)[number]["key"]): number[] | null {
+  const mm = row?.[key];
+  return Array.isArray(mm) && mm.length === 4 ? mm : null;
+}
 
 const defaults = {
   color: muted,
@@ -266,6 +277,76 @@ export function drawCharts(model: Model, data: Dataset): void {
       },
     }),
   );
+
+  if (document.getElementById("chart-tread")) {
+    const past = model.months.filter((m) => !m.projected);
+    const rows = new Map(data.months.map((r) => [r.month, r]));
+    const AXLES = [
+      { name: "front", wheels: ["FL", "FR"], at: 0, dash: undefined },
+      { name: "rear", wheels: ["RL", "RR"], at: 2, dash: [5, 4] },
+    ];
+    const series = TREAD.flatMap((set) => AXLES.map((axle) => ({ set, axle })));
+    live.push(
+      new Chart(ctx("chart-tread"), {
+        type: "line",
+        data: {
+          labels: past.map((m) => monthLabel(m.key)),
+          datasets: [
+            ...series.map(({ set, axle }) => ({
+              label: `${set.label} ${axle.name}`,
+              data: past.map((m) => {
+                const mm = treadOf(rows.get(m.key), set.key);
+                return mm ? (mm[axle.at] + mm[axle.at + 1]) / 2 : null;
+              }),
+              borderColor: set.color,
+              backgroundColor: set.color,
+              borderDash: axle.dash,
+              borderWidth: 2,
+              pointRadius: 3,
+              tension: 0,
+              spanGaps: true,
+            })),
+            {
+              label: "Legal minimum 1.6 mm",
+              data: past.map(() => 1.6),
+              borderColor: "#c45c4a",
+              borderDash: [2, 3],
+              borderWidth: 1,
+              pointRadius: 0,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: "index", intersect: false },
+          plugins: {
+            tooltip: {
+              filter: (item: TooltipItem<"line">) =>
+                item.datasetIndex < series.length && item.raw != null,
+              callbacks: {
+                label: (item: TooltipItem<"line">) => {
+                  const { set, axle } = series[item.datasetIndex];
+                  const mm = treadOf(rows.get(past[item.dataIndex].key), set.key);
+                  if (!mm) return "";
+                  return `${set.label} ${axle.name}: ${axle.wheels[0]} ${num(mm[axle.at], 1)} · ${axle.wheels[1]} ${num(mm[axle.at + 1], 1)} mm`;
+                },
+              },
+            },
+          },
+          scales: {
+            x: { grid: { color: grid }, ticks: { maxTicksLimit: 10 } },
+            y: {
+              min: 0,
+              suggestedMax: 8,
+              grid: { color: grid },
+              ticks: { callback: (v) => `${num(Number(v))} mm` },
+            },
+          },
+        },
+      }),
+    );
+  }
 
   const worthByKey = new Map(model.worth.map((w) => [monthKey(w.date), w]));
 

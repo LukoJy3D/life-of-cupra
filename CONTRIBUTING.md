@@ -43,6 +43,7 @@ Rules:
 - Write every expense field. Use `0` when nothing was paid that month.
 - `odometer_km` is the reading at month end. Needed for €/km and L/100 km.
 - `lease_eur` is the bank total for that month (Euribor and all).
+- At a tyre swap, log the tread of the set coming off as `tread_summer_mm` or `tread_winter_mm`: `[FL, FR, RL, RR]` in mm, e.g. `tread_summer_mm: [4.7, 4.7, 5.2, 5.2]`. The Tyres chart plots these.
 
 ## 4. Open a pull request
 
