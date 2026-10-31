@@ -14,7 +14,7 @@ example: false
 lease:
   start: "2024-09-01"
   term_months: 60
-  monthly_eur: 389.76
+  monthly_eur: 390.13
   monthly_note: Euribor-linked. Logged months are bank totals; later months use the last rate.
   initial_payment_eur: 8000
   km_per_year: 30000

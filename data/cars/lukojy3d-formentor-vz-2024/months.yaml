@@ -233,11 +233,12 @@ months:
   odometer_km: 22646
   remaining_eur: 25810.41
 - month: 2026-10
-  lease_eur: 389.76
+  lease_eur: 390.13
   insurance_eur: 0
   fuel_eur: 160
   tires_eur: 168
   maintenance_eur: 0
   other_eur: 0
   odometer_km: 23337
+  remaining_eur: 25515.09
   note: "Summer → winter (€168). Tread FL–RR: 4.7 / 4.7 / 5.2 / 5.2 mm"
