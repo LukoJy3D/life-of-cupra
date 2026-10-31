@@ -2,7 +2,9 @@
 
 **Live site:** [lukojy3d.github.io/life-of-cupra](https://lukojy3d.github.io/life-of-cupra/)
 
-Open running costs for Cupras people actually drive. Each car is a folder. The site shows the first car; averages can come later if more people contribute.
+A fan project for the copper badge. Not a generic car-cost calculator — **Cupra only**. Formentor, Born, Leon, Tavascan, Terramar: if it wears the badge, it belongs here.
+
+This started because I picked a Formentor VZ on purpose, not because a spreadsheet told me to. The repo is an open ledger of what that choice actually costs: lease, fuel, insurance, tires, service. Each Cupra is a folder. The site shows the first car; more can join.
 
 You do **not** own a leased car. A car page does not treat lease payments as depreciation. It shows sunk cash, €/month, €/km, mileage vs allowance, and a residual band.
 

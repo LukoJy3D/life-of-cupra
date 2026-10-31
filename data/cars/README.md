@@ -1,6 +1,6 @@
 # Cars
 
-Each contributed car is a folder. The home page averages every folder that is not `_template`.
+Cupras only. Each contributed car is a folder. The home page averages every folder that is not `_template`.
 
 ```text
 data/cars/<owner>-<model>-<year>/

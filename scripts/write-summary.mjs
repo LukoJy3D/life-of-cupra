@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync, mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import yaml from "js-yaml";
+import * as yaml from "js-yaml";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const carsDir = join(root, "data", "cars");
