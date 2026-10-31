@@ -1,5 +1,7 @@
 # Add your Cupra
 
+Cupras only. This is a fan ledger, not a brand-agnostic TCO dump.
+
 The site is static. Your car becomes part of the home-page averages when the PR merges.
 
 ## 1. Copy the template
