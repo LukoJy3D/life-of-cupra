@@ -1,4 +1,5 @@
-import type { Dataset, Model } from "../types";
+import type { Dataset, Model, MonthEntry } from "../types";
+import { TREAD, treadOf } from "./charts";
 import { eur, included, iso, km, num } from "./format";
 
 function esc(s: string): string {
@@ -61,6 +62,8 @@ export function renderPage(root: HTMLElement, data: Dataset, model: Model): void
         </dl>
       </article>
     </section>
+
+    ${tyrePanel(data)}
 
     <section class="panel">
       <h2>Worth</h2>
@@ -133,6 +136,35 @@ function kpi(label: string, value: string, note: string): string {
   return `<article class="kpi"><p class="kpi-label">${esc(label)}</p><p class="kpi-value">${esc(value)}</p><p class="kpi-note">${esc(note)}</p></article>`;
 }
 
+function treadText(m: MonthEntry): string[] {
+  return TREAD.flatMap((s) => {
+    const mm = treadOf(m, s.key);
+    return mm ? [`${s.label} tread ${mm.map((v) => num(v, 1)).join(" / ")} mm`] : [];
+  });
+}
+
+function tyrePanel(data: Dataset): string {
+  const latest = TREAD.flatMap((s) => {
+    const row = [...data.months].reverse().find((m) => treadOf(m, s.key));
+    const mm = treadOf(row, s.key);
+    return row && mm
+      ? [`${s.label} ${esc(row.month)}: ${mm.map((v) => num(v, 1)).join(" / ")} mm`]
+      : [];
+  });
+  if (!latest.length) return "";
+  return `
+    <section class="panel">
+      <h2>Tyres</h2>
+      <p class="hint">
+        Tread depth measured at each seasonal swap, on the set coming off.
+        Solid is the front axle, dashed is the rear (average of both wheels).
+        Red dotted is the 1.6 mm legal minimum. Hover a point for each wheel.
+      </p>
+      <p class="statline">Last measured (FL / FR / RL / RR) · ${latest.join(" · ")}</p>
+      <div class="chart-wrap"><canvas id="chart-tread"></canvas></div>
+    </section>`;
+}
+
 function sourceLabel(source: string): string {
   if (source === "backfill") return "Average (scaled to list)";
   if (source === "autoscout24-wayback") return "AutoScout24 archive";
@@ -179,7 +211,7 @@ function monthTable(data: Dataset, model: Model): string {
         <td class="num">${m.insurance_eur ? eur(m.insurance_eur, true) : "—"}</td>
         <td class="num">${m.fuel_eur ? eur(m.fuel_eur, true) : "—"}</td>
         <td class="num">${other ? eur(other, true) : "—"}</td>
-        <td>${esc(m.note ?? "")}</td>
+        <td>${esc([m.note, ...treadText(m)].filter(Boolean).join(". "))}</td>
       </tr>`;
     })
     .join("");

@@ -38,6 +38,9 @@ export interface MonthEntry {
   other_eur?: number;
   odometer_km?: number | null;
   remaining_eur?: number;
+  /** Tread in mm on the set coming off at a swap: [FL, FR, RL, RR]. */
+  tread_summer_mm?: number[];
+  tread_winter_mm?: number[];
   note?: string;
 }
 

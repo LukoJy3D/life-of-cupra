@@ -18,7 +18,8 @@ months:
   other_eur: 0
   odometer_km: 3426
   remaining_eur: 32217.52
-  note: "Summer → winter (change €76, storage €80). Tread FL–RR: 6.2 / 6.0 / 5.9 / 5.9 mm"
+  tread_summer_mm: [6.2, 6.0, 5.9, 5.9]
+  note: "Summer → winter (change €76, storage €80)"
 - month: 2024-11
   lease_eur: 410.07
   insurance_eur: 0
@@ -73,7 +74,8 @@ months:
   other_eur: 0
   odometer_km: 8149
   remaining_eur: 30615.2
-  note: "Winter → summer (change €76, storage €80). Tread FL–RR: 7.4 / 7.5 / 7.5 / 7.4 mm"
+  tread_winter_mm: [7.4, 7.5, 7.5, 7.4]
+  note: "Winter → summer (change €76, storage €80)"
 - month: 2025-05
   lease_eur: 385.66
   insurance_eur: 0
@@ -130,7 +132,8 @@ months:
   other_eur: 0
   odometer_km: 13527
   remaining_eur: 28964.99
-  note: "Summer → winter (change €76, storage €80). Tread FL–RR: 5.8 / 6.0 / 5.9 / 5.9 mm"
+  tread_summer_mm: [5.8, 6.0, 5.9, 5.9]
+  note: "Summer → winter (change €76, storage €80)"
 - month: 2025-11
   lease_eur: 379.18
   insurance_eur: 0
@@ -185,7 +188,8 @@ months:
   other_eur: 0
   odometer_km: 18963
   remaining_eur: 27265.45
-  note: "Winter → summer (change €76, storage €80). Tread FL–RR: 7.3 / 7.5 / 7.5 / 7.4 mm"
+  tread_winter_mm: [7.3, 7.5, 7.5, 7.4]
+  note: "Winter → summer (change €76, storage €80)"
 - month: 2026-05
   lease_eur: 384.79
   insurance_eur: 0
@@ -241,4 +245,5 @@ months:
   other_eur: 0
   odometer_km: 23337
   remaining_eur: 25515.09
-  note: "Summer → winter (€168). Tread FL–RR: 4.7 / 4.7 / 5.2 / 5.2 mm"
+  tread_summer_mm: [4.7, 4.7, 5.2, 5.2]
+  note: "Summer → winter (€168)"
