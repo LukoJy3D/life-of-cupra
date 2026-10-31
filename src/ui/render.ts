@@ -16,10 +16,10 @@ export function renderPage(root: HTMLElement, data: Dataset, model: Model): void
 
   root.innerHTML = `
     <header class="mast">
-      <p class="eyebrow">Life of Cupra${model.example ? ' <span class="pill">example data</span>' : ""}</p>
+      <p class="eyebrow">Life of Cupra · fan project${model.example ? ' <span class="pill">example data</span>' : ""}</p>
       <h1>${esc(v.name)} <em>${esc(v.trim)}</em></h1>
       <p class="lede">
-        ${esc(v.engine)} · ${v.power_ps} PS · private lease ${iso(model.leaseStart)} → ${iso(model.leaseEnd)}.
+        Chosen for the copper badge. ${esc(v.engine)} · ${v.power_ps} PS · private lease ${iso(model.leaseStart)} → ${iso(model.leaseEnd)}.
         You do not own this car. Sunk cash is use, not depreciation.
         ${model.drivenKm === 0 ? " Fuel and odometer not logged yet." : ""}
       </p>
@@ -124,7 +124,7 @@ export function renderPage(root: HTMLElement, data: Dataset, model: Model): void
     </section>
 
     <footer class="foot">
-      <p>Open ledger. Residual band is a guess, not a dealer bid.</p>
+      <p>A Cupra fan project. Open ledger. Residual band is a guess, not a dealer bid.</p>
     </footer>
   `;
 }
