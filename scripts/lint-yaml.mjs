@@ -1,6 +1,6 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { join, relative } from "node:path";
-import * as yaml from "js-yaml";
+import { load } from "js-yaml";
 
 const root = join(import.meta.dirname, "..");
 const skip = new Set(["node_modules", "dist", ".git"]);
@@ -19,7 +19,7 @@ const files = walk(root);
 let failed = 0;
 for (const file of files) {
   try {
-    yaml.load(readFileSync(file, "utf8"), { filename: file });
+    load(readFileSync(file, "utf8"), { filename: file });
   } catch (error) {
     console.error(relative(root, file));
     console.error(error instanceof Error ? error.message : error);
