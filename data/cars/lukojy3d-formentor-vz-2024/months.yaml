@@ -6,6 +6,7 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 2957
   remaining_eur: 32480.01
   note: Initial payment + TPVCA + Kasko
 - month: 2024-10
@@ -15,6 +16,7 @@ months:
   tires_eur: 156
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 3426
   remaining_eur: 32217.52
   note: "Summer → winter (change €76, storage €80). Tread FL–RR: 6.2 / 6.0 / 5.9 / 5.9 mm"
 - month: 2024-11
@@ -24,6 +26,7 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 4292
   remaining_eur: 31953.73
 - month: 2024-12
   lease_eur: 410.18
@@ -32,6 +35,7 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 5272
   remaining_eur: 31688.65
 - month: 2025-01
   lease_eur: 410.26
@@ -40,6 +44,7 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 6031
   remaining_eur: 31422.26
 - month: 2025-02
   lease_eur: 394.93
@@ -48,6 +53,7 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 6364
   remaining_eur: 31154.56
 - month: 2025-03
   lease_eur: 394.27
@@ -56,6 +62,7 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 7151
   remaining_eur: 30885.54
 - month: 2025-04
   lease_eur: 394.51
@@ -64,6 +71,7 @@ months:
   tires_eur: 156
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 8149
   remaining_eur: 30615.2
   note: "Winter → summer (change €76, storage €80). Tread FL–RR: 7.4 / 7.5 / 7.5 / 7.4 mm"
 - month: 2025-05
@@ -73,6 +81,7 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 8775
   remaining_eur: 30343.53
 - month: 2025-06
   lease_eur: 385.99
@@ -81,7 +90,7 @@ months:
   tires_eur: 0
   maintenance_eur: 155.58
   other_eur: 0
-  odometer_km: 9322
+  odometer_km: 9690
   remaining_eur: 30070.52
   note: Oil service at 9,322 km (parts €86.88, labour €41.70, VAT €27)
 - month: 2025-07
@@ -91,6 +100,7 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 10512
   remaining_eur: 29796.17
   note: TPVCA 2025-07; Kasko 2025-07
 - month: 2025-08
@@ -100,6 +110,7 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 11665
   remaining_eur: 29520.47
 - month: 2025-09
   lease_eur: 377.85
@@ -108,6 +119,7 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 12757
   remaining_eur: 29243.41
 - month: 2025-10
   lease_eur: 378.27
@@ -116,6 +128,7 @@ months:
   tires_eur: 156
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 13527
   remaining_eur: 28964.99
   note: "Summer → winter (change €76, storage €80). Tread FL–RR: 5.8 / 6.0 / 5.9 / 5.9 mm"
 - month: 2025-11
@@ -125,6 +138,7 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 15160
   remaining_eur: 28685.2
 - month: 2025-12
   lease_eur: 379.6
@@ -133,6 +147,7 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 15879
   remaining_eur: 28404.03
 - month: 2026-01
   lease_eur: 380.02
@@ -141,6 +156,7 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 16949
   remaining_eur: 28121.48
 - month: 2026-02
   lease_eur: 380.87
@@ -149,6 +165,7 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 17843
   remaining_eur: 27837.54
 - month: 2026-03
   lease_eur: 381.3
@@ -157,6 +174,7 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 18537
   remaining_eur: 27552.2
 - month: 2026-04
   lease_eur: 381.73
@@ -165,6 +183,7 @@ months:
   tires_eur: 156
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 18963
   remaining_eur: 27265.45
   note: "Winter → summer (change €76, storage €80). Tread FL–RR: 7.3 / 7.5 / 7.5 / 7.4 mm"
 - month: 2026-05
@@ -174,6 +193,7 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 19650
   remaining_eur: 26977.29
 - month: 2026-06
   lease_eur: 385.19
@@ -182,6 +202,7 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 20330
   remaining_eur: 26687.71
 - month: 2026-07
   lease_eur: 385.59
@@ -190,7 +211,7 @@ months:
   tires_eur: 0
   maintenance_eur: 268.27
   other_eur: 0
-  odometer_km: 20907
+  odometer_km: 21010
   remaining_eur: 26396.71
   note: TPVCA 2026-07; Kasko 2026-07; service at 20,907 km (parts €152.21, labour €69.50, VAT €46.56)
 - month: 2026-08
@@ -200,12 +221,24 @@ months:
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 21690
   remaining_eur: 26104.28
 - month: 2026-09
   lease_eur: 389.76
   insurance_eur: 0
-  fuel_eur: 0
+  fuel_eur: 180.89
   tires_eur: 0
   maintenance_eur: 0
   other_eur: 0
+  odometer_km: 22646
   remaining_eur: 25810.41
+- month: 2026-10
+  lease_eur: 390.13
+  insurance_eur: 0
+  fuel_eur: 160
+  tires_eur: 168
+  maintenance_eur: 0
+  other_eur: 0
+  odometer_km: 23337
+  remaining_eur: 25515.09
+  note: "Summer → winter (€168). Tread FL–RR: 4.7 / 4.7 / 5.2 / 5.2 mm"
