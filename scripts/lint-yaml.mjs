@@ -1,6 +1,6 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { join, relative } from "node:path";
-import yaml from "js-yaml";
+import * as yaml from "js-yaml";
 
 const root = join(import.meta.dirname, "..");
 const skip = new Set(["node_modules", "dist", ".git"]);
