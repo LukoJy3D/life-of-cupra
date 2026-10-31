@@ -124,7 +124,8 @@ export function compute(
 
   const odoMonths = data.months.filter((m) => m.odometer_km != null);
   const mileage: MileagePoint[] = odoMonths.map((m) => ({
-    date: monthStart(m.month),
+    // odometer_km is a month-end reading
+    date: new Date(Date.UTC(+m.month.slice(0, 4), +m.month.slice(5, 7), 0)),
     km: m.odometer_km as number,
     source: "odometer" as const,
   }));
