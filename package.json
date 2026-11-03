@@ -24,5 +24,8 @@
     "markdownlint-cli": "^0.50.0",
     "typescript": "^7.0.2",
     "vite": "^8.2.2"
+  },
+  "overrides": {
+    "re2js": "~2.8.7"
   }
 }
